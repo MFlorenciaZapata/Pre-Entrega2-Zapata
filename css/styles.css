@@ -1,0 +1,529 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*font-family: 'Open Sans', sans-serif;
+
+header, footer y links igual en todas las paginas*/
+
+header {
+    background-color: rgb(47, 48, 47);
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    align-items: center;
+}
+
+.nav-item {
+    list-style-type: none;
+
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: none;
+    color: rgb(240, 130, 148);
+}
+
+.nav-link:active {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(240, 122, 142);
+}
+
+.links {
+    color: rgb(240, 130, 148);
+    list-style-type: none;
+    text-decoration: none;
+
+}
+
+.links:hover {
+    list-style-type: circle;
+    text-decoration: none;
+    color: #e6cd88;
+}
+
+footer {
+    background-color: rgb(44, 44, 46);
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+}
+
+/* -------- INDEX - pagina principal ---------*/
+#body-index {
+    display: grid;
+    height: 170vh;
+    background-color: black;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "header"
+        "main-index"
+        "footer";
+}
+
+#main-index {
+    grid-area: main-index;
+    background-image: url(../assets/images/picosfondo.png);
+    background-repeat: repeat;
+    /*background-color: black;*/
+    display: grid;
+    grid-template-rows: 4(1fr);
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 60px;
+    grid-template-areas:
+        "bannerMain"
+        "bannerMain2"
+        "seccion1"
+        "seccion2";
+}
+
+#bannerMain {
+    grid-area: bannerMain;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+#intro-main {
+
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 3rem;
+    padding: 8%;
+    width: 50%;
+    margin-left: 30px;
+}
+
+#imagenBanner {
+    margin: 5%
+}
+
+
+#bannerMain2 {
+    grid-area: bannerMain2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#botonBanner {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#seccion1 {
+    grid-area: seccion1;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    padding: 50px;
+    margin: 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.info {
+    margin: 30px;
+    padding: 10%;
+    color: white;
+}
+
+.porcentaje {
+    color: black;
+    margin: 10px;
+    font-size: 8rem;
+    background: linear-gradient(to bottom right, #e6cd88, #c78a96);
+}
+
+#seccion2 {
+    grid-area: seccion2;
+    /*background: linear-gradient(to bottom right, #e6cd88, #c78a96);
+    background-image: url(../assets/images/picosfondo.png);*/
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#alumnas {
+    color: white;
+    text-shadow: 1px 2px rgb(46, 44, 44);
+    font-size: 3rem;
+    padding: 30px;
+    text-align: center;
+    margin: 50px;
+}
+
+#botonBanner2 {
+    font-size: 3rem;
+    margin: 30px;
+}
+
+.redes {
+    padding: 20px;
+}
+
+#wapp {
+    color: lightgreen;
+}
+
+#ig {
+    color: violet;
+}
+
+#fb {
+    color: teal;
+}
+
+
+/*------RESPONSIVE PARA INDEX------*/
+
+
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 2%;
+        display: inline-block;
+    }
+
+    #bannerMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #intro-main {
+        margin: 5%;
+        padding: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #botonBanner {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #botonBanner {
+        position: absolute;
+        bottom: 2%;
+        left: 50%;
+        transform: translate(-50%, 10%);
+    }
+
+    .info {
+        font-size: 1.5rem;
+    }
+
+    .porcentaje {
+        font-size: 3rem;
+    }
+}
+
+
+
+
+/* --------Style para pagina CURSOS--------*/
+#bodyCursos {
+    display: grid;
+    height: 170vh;
+    background-color: black;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "header"
+        "mainCursos"
+        "footer";
+}
+
+#mainCursos {
+    font-family: 'Open Sans', sans-serif;
+    grid-area: mainCursos;
+    display: grid;
+    margin: 50px;
+    margin-bottom: 200px;
+    grid-template-rows: 5(1fr);
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 100px;
+    grid-template-areas:
+        "tituloCursos"
+        "curso1"
+        "curso2"
+        "curso3"
+        "curso4";
+}
+
+#contenedorTitulo {
+    grid-area: tituloCursos;
+    margin-top: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(../assets/images/picosfondo.png);
+    background-repeat: repeat;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#titulo {
+    font-size: 8rem;
+    color: #f0859b;
+}
+
+.cursosUno {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-content: end;
+    justify-content: right;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+.cursosDos {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-content: start;
+    justify-content: left;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+}
+
+.tituloindividual {
+    background: linear-gradient(to bottom right, #e6cd88, #c78a96);
+    color: black;
+    border-radius: 3%;
+    padding: 30px;
+    margin: 20px;
+}
+
+#curso1 {
+    grid-area: curso1;
+}
+
+#curso2 {
+    grid-area: curso2;
+}
+
+#curso3 {
+    grid-area: curso3;
+}
+
+#curso4 {
+    grid-area: curso4;
+}
+
+.inscribirme {
+    position: absolute;
+    bottom: 5%;
+    transform: translate(-10%, 100%);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .navbar-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        text-align: center;
+    }
+
+    .nav-item {
+        margin: 2%;
+        display: inline-block;
+    }
+
+    #contenedorTitulo {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #titulo {
+        font-size: 3rem;
+    }
+
+    .cursosUno .cursosDos {
+        display: inline-block;
+    }
+
+    .tituloindividual {
+        display: inline-block;
+    }
+
+    .inscribirme {
+        position: relative;
+        display: inline-block;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480) {}
+
+/* --------STYLES PARA LA PAGINA -CONTACTO-------- */
+#bodyContacto {
+    display: grid;
+    background-color: black;
+    grid-template-rows: 3(1fr);
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "header"
+        "mainContacto"
+        "footer";
+}
+
+#mainContacto {
+    grid-area: mainContacto;
+    display: grid;
+    grid-template-rows: 2(1fr);
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 100px;
+    grid-template-areas:
+        "introForm"
+        "formulario";
+}
+
+#introForm {
+    grid-area: introForm;
+    color: white;
+}
+
+.formulario {
+    grid-area: formulario;
+    color: white;
+}
+
+/*--------STYLES PARA LA PAGINA -NOSOTRAS--------*/
+
+#bodyNosotras {
+    height: 180vh;
+    background-color: black;
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "header"
+        "mainNosotras"
+        "footer";
+}
+
+#mainNosotras {
+    background-color: black;
+    width: 100%;
+    grid-area: mainNosotras;
+    display: grid;
+    grid-template-rows: 3(1fr);
+    grid-template-columns: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "nosotras1"
+        "nosotras2"
+        "imagenesNosotras";
+}
+
+#nosotras1 {
+    font-size: 2rem;
+    color: white;
+    grid-area: nosotras1;
+    margin: 10%;
+    text-align: center;
+}
+
+#nosotras2 {
+    color: white;
+    font-size: 2rem;
+    grid-area: nosotras2;
+    margin: 10%;
+    text-align: center;
+
+}
+
+
+#imagenesNosotras {
+    grid-area: imagenesNosotras;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenNosotras {
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+
+.tituloNosotras {
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+    padding: 20%;
+    background-image: url(../assets/images/picosfondo.png);
+    background-repeat: repeat
+}
+
+#contenedorCierre {
+    background: linear-gradient(to bottom right, #e6cd88, #c78a96);
+
+    border-radius: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15%;
+    padding: 10%;
+}
+
+#cierreNosotras {
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+}
