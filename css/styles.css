@@ -200,18 +200,19 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-    .navbar-nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        text-align: center;
+    .dropdown-center {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .btn-secondary{
+        color: #c78a96;
     }
 
     .nav-item {
-        margin: 2%;
-        display: inline-block;
+        display: none;
     }
+
 
     #bannerMain {
         display: flex;
@@ -255,6 +256,13 @@ footer {
 
 
 
+
+
+
+
+
+
+
 /* --------Style para pagina CURSOS--------*/
 #bodyCursos {
     display: grid;
@@ -268,6 +276,10 @@ footer {
         "header"
         "mainCursos"
         "footer";
+}
+
+.dropdown-center {
+    display: none;
 }
 
 #mainCursos {
@@ -360,41 +372,61 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .navbar-nav {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        text-align: center;
+
+
+    .dropdown-center {
+        display: block;
+        font-size: 1rem;
+    }
+
+    .btn-secondary{
+        color: #c78a96;
     }
 
     .nav-item {
-        margin: 2%;
-        display: inline-block;
+        display: none;
     }
 
+    #bodyCursos {
+        background-image: url(../assets/images/picosfondo.png);
+        background-repeat: repeat;
+        align-content: center;
+        justify-content: center;
+        width: 100vh;
+        display: inline-block;
+
+    }
     #contenedorTitulo {
-        margin: 0;
-        padding: 0;
-        width: 100%;
+        background-image: none;
+        justify-content: left;
     }
 
     #titulo {
         font-size: 3rem;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(24, 23, 23);
+    
+    }
+    #contenedor-cursos {
+        display: flex;
+        justify-content: left;
     }
 
     .cursosUno .cursosDos {
-        display: inline-block;
+        font-size: 0.5rem;
+        order: 2;
     }
 
     .tituloindividual {
-        display: inline-block;
+        font-size: 1rem;
+        order: 1;
     }
 
     .inscribirme {
         position: relative;
-        display: inline-block;
-        font-size: 2rem;
+        font-size: 0.5rem;
+        order: 3;
     }
 }
 
