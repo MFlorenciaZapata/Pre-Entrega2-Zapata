@@ -249,18 +249,9 @@ footer {
     }
 
     .porcentaje {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 /* --------Style para pagina CURSOS--------*/
@@ -371,12 +362,10 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-
-
-
     .dropdown-center {
         display: block;
         font-size: 1rem;
+        left: 250px;
     }
 
     .btn-secondary{
@@ -392,41 +381,44 @@ footer {
         background-repeat: repeat;
         align-content: center;
         justify-content: center;
-        width: 100vh;
+        width: 100%;
         display: inline-block;
 
     }
     #contenedorTitulo {
         background-image: none;
-        justify-content: left;
+        justify-content: center;
+        background-color: rgb(24, 23, 23);
     }
 
     #titulo {
         font-size: 3rem;
         margin: 0;
         padding: 0;
-        background-color: rgb(24, 23, 23);
-    
     }
     #contenedor-cursos {
-        display: flex;
-        justify-content: left;
+        display: block;
     }
 
     .cursosUno .cursosDos {
-        font-size: 0.5rem;
+        font-size: 1rem;
         order: 2;
+        display: block;
+        width: 100%;
     }
 
     .tituloindividual {
         font-size: 1rem;
         order: 1;
+        display: block;
+        width: 100%;
     }
 
     .inscribirme {
-        position: relative;
-        font-size: 0.5rem;
+
         order: 3;
+        display: block;
+        width: 100%;
     }
 }
 
@@ -558,4 +550,29 @@ footer {
     color: black;
     font-size: 4rem;
     text-align: center;
+}
+
+/*----responsive para nosotras-----*/
+
+@media screen and (max-width: 768px){
+    .dropdown-center {
+        display: block;
+        font-size: 1rem;
+    }
+    
+    .btn-secondary{
+        color: #c78a96;
+    }
+    
+    .nav-item {
+        display: none;
+    }
+
+    #contenedorCierre{
+        font-size: 2rem;
+    }
+
+    #bodyNosotras{
+        width: 100%;
+    }
 }
