@@ -205,7 +205,7 @@ footer {
         font-size: 1rem;
     }
 
-    .btn-secondary{
+    .btn-secondary {
         color: #c78a96;
     }
 
@@ -368,7 +368,7 @@ footer {
         left: 250px;
     }
 
-    .btn-secondary{
+    .btn-secondary {
         color: #c78a96;
     }
 
@@ -385,6 +385,7 @@ footer {
         display: inline-block;
 
     }
+
     #contenedorTitulo {
         background-image: none;
         justify-content: center;
@@ -396,29 +397,37 @@ footer {
         margin: 0;
         padding: 0;
     }
+
     #contenedor-cursos {
         display: block;
     }
 
-    .cursosUno .cursosDos {
+    .cursosUno {
+        align-items: center;
+    }
+
+    .cursosDos {
+        align-items: center;
+    }
+
+    .parrafoCurso {
         font-size: 1rem;
-        order: 2;
         display: block;
         width: 100%;
     }
 
     .tituloindividual {
-        font-size: 1rem;
-        order: 1;
+        font-size: 1.5rem;
         display: block;
         width: 100%;
     }
 
-    .inscribirme {
-
-        order: 3;
+    #botonBanner2 {
+        font-size: 2rem;
         display: block;
         width: 100%;
+        padding: 0;
+        width: 160px;
     }
 }
 
@@ -505,23 +514,18 @@ footer {
     grid-area: nosotras2;
     margin: 10%;
     text-align: center;
-
 }
-
-
 #imagenesNosotras {
     grid-area: imagenesNosotras;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .imagenNosotras {
     display: flex;
     align-items: center;
     margin: 5%;
 }
-
 .tituloNosotras {
     font-size: 4rem;
     display: flex;
@@ -531,7 +535,6 @@ footer {
     background-image: url(../assets/images/picosfondo.png);
     background-repeat: repeat
 }
-
 #contenedorCierre {
     background: linear-gradient(to bottom right, #e6cd88, #c78a96);
 
@@ -545,34 +548,42 @@ footer {
     margin: 15%;
     padding: 10%;
 }
-
 #cierreNosotras {
     color: black;
     font-size: 4rem;
     text-align: center;
 }
 
-/*----responsive para nosotras-----*/
+/*-------responsive para nosotras--------*/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .dropdown-center {
         display: block;
         font-size: 1rem;
     }
-    
-    .btn-secondary{
+
+    .btn-secondary {
         color: #c78a96;
     }
-    
+
     .nav-item {
         display: none;
     }
 
-    #contenedorCierre{
+    #cierreNosotras {
         font-size: 2rem;
     }
 
-    #bodyNosotras{
+    #bodyNosotras {
         width: 100%;
     }
+
+    .imagenNosotras{
+        max-width: 60%;
+        height: auto;
+    }
+    
+}
+@media screen and (max-width: 480px){
+
 }
