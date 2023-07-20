@@ -184,45 +184,71 @@ footer {
 /*------RESPONSIVE PARA INDEX------*/
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+
+
     #body-index {
         grid-row-gap: 0px;
         grid-column-gap: 0px;
         padding: 0px;
         margin: 0px;
         margin-bottom: 0px;
+        height: 250vh;
+        width: 100%;
+
     }
 
     .dropdown-center {
         display: block;
-        font-size: 1rem;
     }
 
     .btn-secondary {
-        color: #c78a96;
+        color: #dabbc1;
+        font-size: 1rem;
     }
 
     .nav-item {
         display: none;
     }
 
+    #logoNav {
+        display: none;
+    }
 
     #bannerMain {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0;
+        padding: 0;
     }
 
     #indexGif {
-        height: auto;
-        width: 100%;
+        height: 50%;
     }
 
-    /*#intro-main {
-        margin: 5%;
+    #seccion1 {
+
+        width: 60%;
+    }
+
+    .info {
+        font-size: 1rem;
+        margin: 0;
         padding: 0;
+    }
+
+    .porcentaje {
         font-size: 2rem;
-        text-align: center;*/
+        margin: 0;
+        padding: 0;
+    }
+
+    #alumnas {
+        margin: 2%;
+        padding: 0;
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -231,11 +257,11 @@ footer {
 
 
     .info {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .porcentaje {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 }
 
@@ -244,7 +270,7 @@ footer {
 #bodyCursos {
     height: 170vh;
     background-color: black;
-    
+
 }
 
 .dropdown-center {
@@ -253,7 +279,7 @@ footer {
 
 #mainCursos {
     font-family: 'Open Sans', sans-serif;
-    
+
 }
 
 #contenedorTitulo {
@@ -272,8 +298,8 @@ footer {
 
 .cursos {
     margin: 10%;
-   color: white;
-   text-align: center;
+    color: white;
+    text-align: center;
 }
 
 .tituloindividual {
@@ -284,16 +310,16 @@ footer {
     font-size: 3rem;
 }
 
-.parrafoCurso{
+.parrafoCurso {
     font-size: 1.5rem;
     padding-left: 10%;
     padding-right: 10%;
 }
+
+/*------------------------RESPONSIVE PARA CURSOS -------------------*/
 @media screen and (max-width: 768px) {
     .dropdown-center {
         display: block;
-        font-size: 1rem;
-        left: 250px;
     }
 
     .btn-secondary {
@@ -304,19 +330,18 @@ footer {
         display: none;
     }
 
+    #logoNav {
+        display: none;
+    }
+
     #bodyCursos {
         background-image: url(../assets/images/picosfondo.png);
         background-repeat: repeat;
-        align-content: center;
-        justify-content: center;
         width: 100%;
-        display: inline-block;
-
     }
 
     #contenedorTitulo {
         background-image: none;
-        justify-content: center;
         background-color: rgb(24, 23, 23);
     }
 
@@ -326,78 +351,25 @@ footer {
         padding: 0;
     }
 
-    #contenedor-cursos {
-        display: block;
-    }
-
-    .cursosUno {
-        align-items: center;
-    }
-
-    .cursosDos {
-        align-items: center;
-    }
-
     .parrafoCurso {
         font-size: 1rem;
-        display: block;
         width: 100%;
     }
 
     .tituloindividual {
         font-size: 1.5rem;
-        display: block;
         width: 100%;
     }
 
     #botonBanner2 {
         font-size: 2rem;
-        display: block;
         width: 100%;
         padding: 0;
         width: 160px;
     }
 }
 
-@media screen and (max-width: 480) {}
-
-/* --------STYLES PARA LA PAGINA -CONTACTO-------- */
-#bodyContacto {
-    /* display: grid;*/
-    background-color: black;
-    /* grid-template-rows: 3(1fr);
-    grid-template-columns: 1fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    grid-template-areas:
-        "header"
-        "mainContacto"
-        "footer";*/
-}
-
-#mainContacto {
-    grid-area: mainContacto;
-    display: grid;
-    grid-template-rows: 2(1fr);
-    grid-template-columns: 1fr;
-    grid-column-gap: 20px;
-    grid-row-gap: 100px;
-    grid-template-areas:
-        "introForm"
-        "formulario";
-}
-
-/*#introForm {
-    grid-area: introForm;
-    color: white;
-}
-
-.formulario {
-    grid-area: formulario;
-    color: white;
-}*/
-
-/*--------STYLES PARA LA PAGINA -NOSOTRAS--------*/
+/*--------STYLES PARA LA PAGINA NOSOTRAS--------*/
 
 #bodyNosotras {
     height: 180vh;
@@ -410,21 +382,15 @@ footer {
     text-align: center;
 }
 
-#nosotras1 {
+.nosotrasContenedor {
     font-size: 2rem;
     color: white;
-    margin: 10%;
-    text-align: center;
-}
-#nosotras2 {
-    color: white;
-    font-size: 2rem;
     margin: 10%;
     text-align: center;
 }
 
-#carouselExampleAutoplaying{
-width: 70%;
+#carouselExampleAutoplaying {
+    width: 70%;
 }
 
 .tituloNosotras {
@@ -453,9 +419,7 @@ width: 70%;
 @media screen and (max-width: 768px) {
     .dropdown-center {
         display: block;
-        font-size: 1rem;
     }
-
     .btn-secondary {
         color: #c78a96;
     }
@@ -464,26 +428,44 @@ width: 70%;
         display: none;
     }
 
+    #logoNav {
+        display: none;
+    }
+
     #cierreNosotras {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     #bodyNosotras {
         width: 100%;
     }
 
+    .nosotrasContenedor {
+        margin: 5%;
+    }
+
+    .tituloNosotras {
+        padding: 0;
+    }
+
     .imagenNosotras {
         max-width: 60%;
-        height: auto;
     }
+.parrafoNosotras{
+    font-size: 1rem;
+}
 }
 
 @media screen and (max-width: 480px) {}
 
 /*------------STYLE PARA PREGUNTAS FRECUENTES-------------*/
-#mainPreguntas {
-    background-color: black;
+#bodyPreguntas {
+    height: 150vh;
+    background-image: url(../assets/images/picosfondo.png);
+    background-repeat: repeat;
+
 }
+
 
 #preguntasTitulo {
     font-size: 5rem;
@@ -496,17 +478,107 @@ width: 70%;
 
 }
 
-.contenedorPreguntas{
-    width: 70%;
+.contenedorPreguntas {
     margin: 10%;
-    
+    background-color: black;
+    box-shadow: white 2px 3px 0px;
+    padding: 5%;
 }
 
-.pregunta{
+.pregunta {
     color: #f0859b;
     font-size: 2rem;
 }
-.textoPregunta{
-font-size: 1.5rem;
-color: white;
+
+.textoPregunta {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/*------------REPONSIVE PREGUNTAS FRECUENTES-------------*/
+@media screen and (max-width: 768px) {
+    .dropdown-center {
+        display: block;
+    }
+
+    .btn-secondary {
+        color: #c78a96;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    #logoNav {
+        display: none;
+    }
+}
+
+
+/*---------------- STYLES PARA PAGINA CONTACTO -----------------*/
+#bodyContacto {
+    background-image: url(../assets/images/logo.png);
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+#contactoTitulo {
+    font-size: 4rem;
+}
+
+
+#mainContacto {
+    width: 50%;
+    padding: 15px;
+    margin: 30px;
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+}
+
+.formulario {
+    display: block;
+    margin: 30px;
+}
+
+#linkContacto {
+    text-decoration: none;
+    background-color: rgb(52, 43, 43);
+    color: white;
+    margin: 15px;
+}
+
+/*------------REPONSIVE PARA PAGINA CONTACTO-------------*/
+@media screen and (max-width: 768px) {
+    .dropdown-center {
+        display: block;
+    }
+
+    .btn-secondary {
+        color: #c78a96;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    #logoNav {
+        display: none;
+    }
+
+    #bodyContacto {
+        background-image: none;
+    }
+
+    #mainContacto {
+        font-size: 1rem;
+    }
+
+    #contactoTitulo {
+        font-size: 2rem;
+
+    }
 }
