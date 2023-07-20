@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>SHEcoder</title>
-    <link rel="shortcut icon" href="../css/styles.css" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/images/faviconsc.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&display=swap"
@@ -13,9 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body id="bodyNosotras">
+<body id="bodyNosotras" class="container-fluid">
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -55,10 +56,10 @@
         </nav>
     </header>
 
-    <main id="mainNosotras">
+    <main id="mainNosotras" class="container-fluid">
 
-        <div id="nosotras1">
-            <h1 class="tituloNosotras">QUIENES SOMOS</h1>
+        <div id="nosotras1" data-aos="fade-up" class="row h-100">
+            <h1 class="tituloNosotras" >QUIENES SOMOS</h1>
             <p class="parrafoNosotras">Somos un equipo de mujeres, inspiradas por otras mujeres, a formar parte
                 del mundo IT, desafiando la brecha de genero existente y poniendo toda
                 nuestra dedicacion y esfuerzo en aprender constantemente y compartir nuestros
@@ -67,26 +68,41 @@
             </p>
         </div>
 
-        <div id="nosotras2">
+        <div id="nosotras2" data-aos="fade-up">
             <h1 class="tituloNosotras">NUESTRO OBJETIVO</h1>
-            <p class="parrafoNosotras">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus odit ullam dignissimos quae.
-                Ad, possimus? Eligendi corporis mollitia eius esse consequatur aspernatur enim magni consectetur
-                dicta qui, reiciendis, ut vitae!
+            <p class="parrafoNosotras">Nos enfocamos en acompanar en cada paso a quienes decidan transitar con nosotras
+                este camino, sin prejuicios, sin presiones, para que puedan aprender y desenvolverse en este mundo.
+                Queremos que a demas de saber aplicar conocimientos, tambien se apasionen y encuentren aqui su lugar.
             </p>
         </div>
 
-        <div id="imagenesNosotras">
-            <img src="../assets/images/imagen1.jpg" alt="" class="imagenNosotras" width="500">
+        <div id="imagenesNosotras" class="container-fluid ">
 
-            <img src="../assets/images/imagen2.jpg" alt="" class="imagenNosotras" width="500">
-
-            <img src="../assets/images/imagen4.jpg" alt="" class="imagenNosotras" width="500">
-
-            <img src="../assets/images/imagen5.jpg" alt="" class="imagenNosotras" width="500">
+            <div id="carouselExampleAutoplaying" class="carousel slide row h-100" data-bs-ride="carousel" >
+                <div class="carousel-inner col">
+                  <div class="carousel-item active">
+                    <img src="../assets/images/imagen1.jpg" class="d-block w-100" alt="..." width="100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/images/imagen2.jpg" class="d-block w-100" alt="..." width="100">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/images/imagen4.jpg" class="d-block w-100" alt="..." width="100">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
 
         <div id="contenedorCierre">
-            <p id="cierreNosotras">SI COMPARTIS NUESTRAS IDEAS Y ESTAS DISPUESTA A IR POR MAS, TU FUTURO TE ESTA ESPERANDO!</p>
+            <p id="cierreNosotras">SI COMPARTIS NUESTRAS IDEAS Y ESTAS DISPUESTA A IR POR MAS, ESTE ES TU LUGAR!</p>
         </div>
 
     </main>
@@ -123,6 +139,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
 </body>
 
 </html>
